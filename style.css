@@ -190,3 +190,27 @@ marquee{
     background-color: darkmagenta;
     color: #fff;
 }
+
+
+
+/* ------------------------ Assignment-02 ------------------------ */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #2b082b;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.table__h3{
+  text-align: center;
+  font-size: 25px;
+}
