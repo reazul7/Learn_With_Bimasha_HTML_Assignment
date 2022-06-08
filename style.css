@@ -1,4 +1,5 @@
-.assignment_btn, .home__btn {
+.assignment_btn,
+.home__btn {
   text-align: center;
   padding: 50px;
 }
@@ -9,22 +10,18 @@
   font-weight: bold;
 }
 
-
-
 /* ------------------------ button__animation__effect ------------------------ */
 .animated-button {
   background: linear-gradient(-30deg, #3d0b3d 50%, #2b082b 50%);
   padding: 20px 40px;
   margin: 12px;
   display: inline-block;
-  -webkit-transform: translate(0%, 0%);
+  /* -webkit-transform: translate(0%, 0%); */
   transform: translate(0%, 0%);
   overflow: hidden;
   color: #f7d4f7;
   font-size: 20px;
   letter-spacing: 2.5px;
-  text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
   -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
@@ -163,35 +160,31 @@
   }
 }
 
-
-
 /* ------------------------ Assignment-01 ------------------------ */
-marquee{
-    background-color: #f7d4f7;
-    padding: 5px;
+marquee {
+  background-color: #f7d4f7;
+  padding: 5px;
 }
 
-.github__link__area{
-    text-align: center;
-    padding-top: 20px;
+.github__link__area {
+  text-align: center;
+  padding-top: 20px;
 }
 
-.github__link__area a{
-    text-decoration: none;
-    font-weight: bolder;
-    color: darkmagenta;
-    font-size: 20px;
-    border: 2px solid #3d0b3d;
-    padding: 10px 20px;
-    border-radius: 10px;
+.github__link__area a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: darkmagenta;
+  font-size: 20px;
+  border: 2px solid #3d0b3d;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
-.github__link__area a:hover{
-    background-color: darkmagenta;
-    color: #fff;
+.github__link__area a:hover {
+  background-color: darkmagenta;
+  color: #fff;
 }
-
-
 
 /* ------------------------ Assignment-02 ------------------------ */
 table {
@@ -200,7 +193,8 @@ table {
   width: 100%;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #2b082b;
   text-align: left;
   padding: 8px;
@@ -210,7 +204,93 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.table__h3{
+.table__h3 {
   text-align: center;
   font-size: 25px;
+}
+
+/* ------------------------ Assignment-03 ------------------------ */
+.user__details__area__heading{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  text-shadow: 3px 3px 20px #d926d9,
+    -2px 1px 30px #d926d9;
+}
+.user__details__area {
+  font-size: 25px;
+  background-color: rgb(243, 229, 243);
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.user__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user__details .input__box {
+  padding: 15px 0px;
+  width: 50%;
+}
+
+.details {
+  display: block;
+}
+
+input {
+  height: 25px;
+  padding: 2px 20px 2px 5px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border: 1px solid #3d0b3d;
+}
+
+.input__form__work {
+  text-align: center;
+}
+
+/* ----------------- input__form__button__area -------------- */
+.input__form__btn {
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  z-index: 1;
+  margin: 10px;
+}
+
+.input__form__btn:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #e0e5ec;
+  transition: all 0.3s ease;
+}
+
+.input__form__btn:hover {
+  color: #000;
+}
+
+.input__form__btn:hover:after {
+  top: 0;
+  height: 100%;
+}
+
+.input__form__btn:active {
+  top: 2px;
 }
